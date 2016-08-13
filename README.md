@@ -1,2 +1,0 @@
-# VincentLim
-Personal Website/Portfolio

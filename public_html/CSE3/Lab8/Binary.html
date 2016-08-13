@@ -1,0 +1,101 @@
+<html>
+	<head>
+		<title>Decimal to Binary Converter</title>
+		<style type="text/css">
+			body {
+				background-color: #BBB;
+			}
+			
+			table {
+				background-color: #90C984;
+			}
+			
+			hr {
+				background-color: orange;
+				width: 50%;
+				height: 4px;
+			}
+			
+			th {
+				width: 100px;
+				height: 50px;
+			}
+			
+			td {
+				width: 100px;
+				height: 50px;
+				text-align: center;
+			}
+			
+			button {
+				width: 100px;
+				height: 50px;
+			}
+		</style>
+
+		<script type="text/javascript">
+			var input;
+			var binary;
+			
+			function get_input() {
+				input = prompt("Please enter a decimal value between 0-255 to convert to binary.");
+				if (input < 0 || input > 255) {
+					alert("Invalid input, please try again.");
+				} else {
+					document.getElementById("decimal").innerHTML = input;
+				}
+			}
+			
+			function convert() {
+				binary = "";
+				for(i=7; i>=0; i--) {
+					var power_of_2 = Math.pow(2, i);
+					if(input >= power_of_2) {
+						input = input - power_of_2;
+						binary = binary + "1";
+					} else {
+						binary = binary + "0";
+					}
+				}
+				
+				document.getElementById("binary").innerHTML = binary;
+			}
+		</script>
+		
+	</head>
+	<body>
+		
+
+		<center>
+			<h1>Decimal to Binary Converter</h1>
+			<hr />
+			<h2>Convert a value between 0-255 to binary!</h2>
+			
+			<table border = 2>
+				<tr>
+					<th>
+						<button onclick = "get_input()">New Value</button>
+					</th>
+					<th>Decimal</th>
+					<th>Binary</th>
+				</tr>
+				
+				<tr>
+					<td>
+						<button onclick = "convert()"> Convert Value</button>
+					</td>
+					
+					<td>
+						<p id="decimal"></p>
+					</td>
+					
+					<td>
+						<p id="binary"></p>
+					</td>
+					
+				</tr>
+				
+			</table>
+		</center>
+	</body>
+</html>

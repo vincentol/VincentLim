@@ -1,0 +1,44 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<center>
+			<script type = "text/javascript">
+				var numLoop = 15;
+				var numPrinted = 0;
+				var text;
+				
+				while (numPrinted < numLoop)
+				{
+					numPrinted++;
+					text = "While loop: " + numPrinted + "</br>";
+					if (numPrinted % 3 == 0) {
+						document.write(text.fontcolor("red"));
+					}
+					else if (numPrinted % 7 == 0) {
+						document.write(text.fontcolor("green"));
+					}
+					else
+					{
+						document.write(text.fontcolor("orange"));
+					}
+				}
+				
+				for( numPrinted = 0; numPrinted < numLoop; numPrinted++) {
+					text = "For loop: " + (numPrinted + 1) + "</br>";
+					if ((numPrinted+1) % 3 == 0) {
+						document.write(text.fontcolor("red"));
+					}
+					else if ((numPrinted+1) % 7 == 0) {
+						document.write(text.fontcolor("green"));
+					}
+					else
+					{
+						document.write(text.fontcolor("orange"));
+					}
+				}
+				
+			</script>
+		</center>
+	</body>
+</html>

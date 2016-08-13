@@ -1,0 +1,120 @@
+<html>
+	<head>
+		<title> </title>
+		<style type="text/css">
+			hr {
+				width: 50%;
+			}
+			
+			td {
+				width: 120px;
+				height: 50px;
+				background-color: gray;
+				text-align: center;
+			}
+			button {
+				width: 120px;
+				height: 50px;
+				color: darkblue;
+			}
+		</style>
+		
+		<script type="text/javascript">
+		var player = 0;
+		var dealer = 0;
+		var bet = 0;
+		var totalBet = 0;
+		var cash = 2500;
+		var name = "Vincent";
+		
+		function showBet()
+		{
+			document.getElementById("getBet").innerHTML = "$" + bet;
+		}
+		
+		function placeBet()
+		{
+			document.getElementById("getCash").innerHTML = "$" + cash;
+			totalBet += bet;
+			bet = 0;
+			document.getElementById("getBet").innerHTML = "$" + totalBet;
+		}
+		function play()
+		{
+			dealer = Math.floor((Math.random()*6)+17);
+			player = Math.floor((Math.random()*9)+16);
+			cash = cash - totalBet;
+			if(cash < 0) {
+				alert("You have no money left!");
+			}
+			document.getElementById("getDealer").innerHTML = dealer;
+			document.getElementById("getPlayer").innerHTML = player;
+			document.getElementById("getBet").innerHTML = "$" + totalBet;
+			if(player > 21){
+				document.getElementById("result").innerHTML = "Busted! You lose!";
+			}
+			else if(dealer > 21){
+				document.getElementById("result").innerHTML = "Dealer Busted! " + name + " wins!";
+				cash = cash + totalBet*2;
+			}
+			else if(player > dealer) {
+				document.getElementById("result").innerHTML = name + " wins!";
+				cash = cash + totalBet*2;
+			}
+			else if(dealer > player) {
+				document.getElementById("result").innerHTML = "Dealer wins!";
+			}
+			else if(dealer == player) {
+				document.getElementById("result").innerHTML = "Dealer wins!";
+			}
+			document.getElementById("getCash").innerHTML = "$" + cash;
+		}
+		
+		function newHand() {
+			document.getElementById("getPlayer").innerHTML = "";
+			document.getElementById("getDealer").innerHTML = "";
+			document.getElementById("getBet").innerHTML = "";
+			document.getElementById("result").innerHTML = "";
+			document.getElementById("getCash").innerHTML = "$" + cash;
+			bet = totalBet = 0;
+		}
+		
+		function showMoney() {
+			cash += 200;
+			document.getElementById("getCash").innerHTML = "$" + cash;
+		}
+		</script>
+	</head>
+	<body>
+		<center>
+			<h1>Let's Play Black Jack</h1>
+			<br>
+			<img src = "blackjack.jpg" />
+			<hr>
+			
+			<table border = "2">
+				<tr>
+					<th>Your Total</th>
+					<th>Dealer Total</th>
+					<th>Bet Amount</th>
+					<th>Cash Remaining</th>
+				</tr>
+				<tr>
+					<td><p id = "getPlayer">&nbsp;</p></td>
+					<td><p id = "getDealer">&nbsp;</p></td>
+					<td><p id = "getBet">&nbsp;</p></td>
+					<td><p id = "getCash">$2500</p></td>
+				</tr>
+			</table>
+			<p id="result"></p>
+			<button onclick="bet+=5;showBet();">$5</button>
+			<button onclick="bet+=100;showBet();">$100</button>
+			<button onclick="placeBet()">Place Bet</button>
+			<br>
+			<button onclick="play()">Play</button>
+			<button onclick="newHand()">New Hand</button>
+			<button onclick="showMoney()">More Cash</button>
+			
+		</center>
+	</body>
+</html>
