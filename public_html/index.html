@@ -1,426 +1,115 @@
 <!DOCTYPE html>
+<!-- Inspired by Dave Gamache's Parallax Demo: http://davegamache.com/parallax/-->
 <html>
-  <head>
-    <title>
-      Online Portfolio: Vincent Lim
-    </title>
-    <meta charset="UTF-8">
+<head>
+<meta charset="utf-8">
+<title>Vincent Lim</title>
+<meta name="author" content="Dave Gamache | @dhg ; Vincent Lim">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
+</head>
+<body>
 
-    <link rel="stylesheet" href="CSS/w3.css" />
-    <link rel="stylesheet" href="CSS/animations/dist/aos.css" />
+  <!-- Media Sidebar -->
+  <ul class="social">
+    <li>
+      <a class="fa fa-facebook" href="http://www.facebook.com/VincentOL" target="_blank">
+        <span>Facebook</span>
+      </a> 
+    </li>
+    
+    <li>
+      <a class="fa fa-linkedin" href="http://www.linkedin.com/in/VincentOhWell" target="_blank">
+        <span>LinkedIn</span>
+      </a>
+    </li>
+    
+    <li>
+      <a class="fa fa-github" href="https://github.com/vincentol" target="_blank">
+        <span>GitHub</span>
+      </a>
+    </li>
+    
+    <li>
+      <a class="fa fa-envelope" href="mailto:vincentorionlim@gmail.com?Subject=Hello">
+      <span>Gmail</span>
+      </a> 
+    </li>
+    
+    <li>
+      <a class="fa fa-phone" href="#">
+        <span>(951) 473-3172</span>
+      </a> 
+    </li>
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <li>
+      <a class="fa fa-user" href="Resume.pdf" target="_blank">
+        <span>Resume</span>
+      </a> 
+    </li>
 
-    <!-- for non-underlined links -->
-    <style>
+  </ul>
+  <!-- End Media Sidebar -->
 
-    .CKI {display:none;}
-    </style>
 
-  </head>
 
-  <!--//////// START OF CONTENT OF PAGE ////////-->
-  
-  <body>
-    <!-- Fixed Navigation Bar -->
-    <div class = "w3-top w3-centered">
-      <ul class = "w3-navbar w3-border w3-light-grey">
-        <li style = "width:15%"><a class="w3-hover-blue-grey" href="#AboutMe">About Me</a></li>
-        <li style = "width:15%"><a class="w3-hover-blue-grey" href="#Education">Education</a></li>
-        <li style = "width:15%"><a class="w3-hover-blue-grey" href="#Extra">Extracurriculars</a></li>
-        <li style = "width:15%"><a class="w3-hover-blue-grey" href="#Work">Work Experience</a></li>
-        <li style = "width:15%"><a class="w3-hover-blue-grey" href="Resume.pdf" target="_blank">Resume</a></li>
-        <li style = "width:15%"><a class="w3-hover-blue-grey" href="#Projects">Projects</a></li>
-        <li style = "width:10%"><a class="w3-hover-blue-grey" href="#Contact">Contact Info</a></li>
+<div class="container">
+  <div class="container-inner">
+    <div class="background"></div>
+    <section id="intro" class="wrapper">
+      <h1 class="name">Vincent Lim</h1>
+      <h2 class="byline">Welcome to my Online Portfolio</h2>
+    </section>
+    <section id="amsection" class="wrapper">
+      <h2 class="aboutme">About Me</h2>
+      <p class="aboutme" id="amdesc1">
+        Hello! My name is Vincent Lim. I'm currently pursuing a Bachelor of Science in Computer Science Engineering at the University of California, San Diego. As of the making of this website, I am a 3rd year with a 3.345 GPA. My expectected graduation date is June 2018.
+      </p>
+      <p class="aboutme" id="amdesc2">
+        So far, most of my computer science career has been front-end development. I am currently taking classes that teach me about databases and server-side applications so I can become a full stack engineer. My hobbies include basketball, card games, board games, video games, magic tricks, and community service.
+      </p>
+      <img id="aboutme1" class="amimage" src="images/Seal.png">
+      <img id="aboutme2" class="amimage" src="images/Extra.jpg">
+    </section>
+    <section id="class-section" class="wrapper">
+      <h2 class="explosion-byline-header" id="class_title" id="class_header"><span>Completed Coursework</span></h2>
+      <p class="explosion-byline" id="class_info"><span>Here are some relevant Computer Science courses that I've taken at UCSD. Please keep in mind that I cannot publicly release most of my class projects because of academic integrity reasons. However, feel free to click on any course for more information!</span></p>
+      <ul id="domExplosionList">
+        <li class="dom-explosion-item dei-1"><strong>CSE</br>11</strong></li>
+        <li class="dom-explosion-item dei-2"><strong>CSE</br>12</strong></li>
+        <li class="dom-explosion-item dei-3"><strong>CSE</br>30</strong></li>
+        <li class="dom-explosion-item dei-4"><strong>CSE</br>100</strong></li>
+        <li class="dom-explosion-item dei-5"><strong>CSE</br>101</strong></li>
+        <li class="dom-explosion-item dei-6"><strong>CSE</br>105</strong></li>
+        <li class="dom-explosion-item dei-7"><strong>CSE</br>110</strong></li>
+        <li class="dom-explosion-item dei-8"><strong>CSE</br>120</strong></li>
+        <li class="dom-explosion-item dei-9"><strong>CSE</br>130</strong></li>
+        <li class="dom-explosion-item dei-10"><strong>CSE</br>131</strong></li>
+        <li class="dom-explosion-item dei-11"><strong>CSE</br>140/141</strong></li>
+        <li class="dom-explosion-item dei-12"><strong>CSE</br>170</strong></li>
       </ul>
-    </div>
+    </section>
+    <section id="work-section" class="wrapper">
+      <h2 class="work-byline">Work Experience</h1>
+      <div class="work-text" id="ibm-text">(Summer 2017)</br>I have been given an amazing opportunity to work as a Front-End Developer Intern at IBM this summer. Check back after September to hear about my thoughts and experiences regarding interning at a big company in New York.</div>
+      <img class="work-image" id="ibm" src ="./images/IBM.png">
+
+      <div class="work-text" id="csi-text">(Jan 2017 - Present)</br>I am currently an undergraduate
+        assistant for the Community Service department of the Center for Student Involvement. Through this position, I have advocated for a <a href="https://docs.google.com/presentation/d/1m5j6ltiVmh6wqeffns-UrGHwFgWBL4i9-yoKiJNO_o8/edit#slide=id.g1dff7dd85f_1_2" target="_blank">'changemaker space'</a> on campus, I am creating a Service Collective,
+      and I am working on a video project that promotes 'Social Innovations' on campus.</div> 
+      <img class="work-image" id="csi" src ="./images/csi.png">
+
+    </section>
 
 
-
-    <!-- NEW DESIGN HERE -->
-
-    <!-- Section 1 -->
-    <div class="w3-row w3-light-grey" style="padding: 1% 0% 3% 0%;" id="AboutMe"
-      data-aos="fade-in">
-
-      <br><br><br>
-    <!-- Welcoming Message -->
-        <div class="w3-container w3-half w3-animate-left">
-          <div class="w3-card-12 w3-pale-blue w3-padding-medium">
-            <center><img width="75%" src="images/ProPic2016.jpg"></center>
-            <div class="w3-container w3-center">
-              <center><p>Hello! My name is Vincent Lim, I'm currently a 3rd year Computer Science Major at UCSD. Welcome to my online portfolio! There is a quick 'About Me' to the right, and you can scroll down (or use the navigation bar at the top) for more information.</p></center>
-            </div>
-          </div>
-        </div>
-      
-        <!-- About Me -->
-        <div class="w3-container w3-half w3-animate-right" style="padding: 0% 1% 10% 1%;">
-          <div class="w3-card-4">
-            <header class="w3-container w3-pale-blue">
-              <h1>Who am I?</h1>
-            </header>
-          
-            <div class="w3-container w3-white" style="height: 400px;">
-              <p>Name: Vincent Lim
-              <br>Age: 20
-              <br>Occupation: Student / Center for Student Involvement Office Assistant</p>
-              <br>Major: Computer Science (BS)
-              <p>I have always been fascinated by computers. Ever since a young age, I would always play on my Dad's PC, playing games on floppy disks. Growing up with computers, and watching them change over time, I always wondered how they work, how programs worked, how a floppy disk affected what was being displayed by the monitor. It wasn't long before I decided that I wanted to contribute to this evolution of computers and computer programs. Now, while attending UCSD, I have decided to put my focus towards web applications, mobile applications, desktop applications, and website design.</p>
-           </div>
-
-          </div>
-       </div>
-
-    </div>
-
-    <!-- End of Section 1 -->
-
-    <!-- Beginning of Section 2 -->
-    <div class="w3-row w3-blue-grey" style="padding: 3% 0% 5% 0%;" id="Education">
-      <br>
-      <div class="w3-container" 
-        data-aos="fade-up"
-        data-aos-duration="800">
-        <div class="w3-card-4">
-          <header class="w3-container w3-blue">
-            <h1>Education</h1>
-          </header>
-
-          <div class="w3-container w3-third w3-light-grey w3-col"
-            style="height: 600px;">
-              <img width="75%" src="images/Seal.png"
-              style="padding: 5% 0% 5% 0%;">
-              <br>
-              <p>Disclaimer: Class files are not available to the public for Academic Integrity purposes, however all class projects are available upon request.</p>
-          </div>
-
-          <div class="w3-container w3-rest w3-light-grey"
-            style="width: 66%; height: 600px">
-            <h2>The University of California, San Diego</h2>
-
-            <p>
-            <b>Major: </b>Computer Science (BS) <br>
-            <b>Cumulative GPA: </b> 3.358 <br>
-            <b>Expected Graduation Date: </b>June 2018<br>
-            </p>
-
-            <h2>Relevant Completed Courses</h2>
-            <br>
-            <!-- begin list of classes -->
-              <div class="w3-accordion w3-light-grey" style="width: 70%;">
-              <button onclick="myFunction('CSE11', 'CSE12', 'CSE30', 'CSE100', 'CSE140', 'CSE110')" 
-                class="w3-btn-block w3-left-align w3-light-green"
-                data-aos="zoom-in"
-                data-aos-delay="400">
-                <center><b>CSE 11</b></center>
-              </button>
-              <div id="CSE11" class="w3-accordion-content w3-container">
-                <h5>Intro to CS & OOP: Java (Accelerated Pace)</h5>
-                <p>In this class, I learned the basics of Object Oriented Programming through Java. We did 10 projects throughout the quarter varying from animating 'critters' to drawing triangles on the terminal. Everything was done in a UNIX environment using VIM.</p>
-              </div>
-
-              <br>
-
-              <button onclick="myFunction('CSE12', 'CSE11', 'CSE30', 'CSE100', 'CSE140', 'CSE110')" 
-                class="w3-btn-block w3-left-align w3-light-blue"
-                data-aos="zoom-in"
-                data-aos-delay="600">
-                <center><b>CSE 12</b></center>
-              </button>
-              <div id="CSE12" class="w3-accordion-content w3-container">
-                <h5>Basic Data Structures and Object-Oriented Design</h5>
-                <p>The most important things in Object-Oriented Design are Data Structures, and CSE12 taught me the importance of data structures by having me design some basic ones. (eg. Stack, Deque, Linked List, Argument Parser)</p>
-              </div>
-
-              <br>
-
-              <button onclick="myFunction('CSE30', 'CSE11', 'CSE12', 'CSE140', 'CSE110', 'CSE100')" 
-                      class="w3-btn-block w3-left-align w3-light-green"
-                      data-aos="zoom-in"
-                      data-aos-delay="800">
-                <center><b>CSE 30</b></center>
-              </button>
-              <div id="CSE30" class="w3-accordion-content w3-container">
-                <h5>Computer Organization and Systems Programming</h5>
-                <p>A good programmer can write code, but a great programmer understands how that code is being run by the machine. CSE 30 taught me how code is translated to Assembly language. CSE 30 made me more appreciative of higher level languages such as Java, C, and C++ by having me write my programs in ARM Assembly.</p>
-              </div>
-
-              <br>
-
-              <button onclick="myFunction('CSE100', 'CSE11', 'CSE30', 'CSE12', 'CSE140', 'CSE110')" 
-                      class="w3-btn-block w3-left-align w3-light-blue"
-                      data-aos="zoom-in"
-                      data-aos-delay="1000">
-                <center><b>CSE 100</b></center>
-              </button>
-              <div id="CSE100" class="w3-accordion-content w3-container">
-                <h5>Advanced Data Structures</h5>
-                <p>Simple data structures are useful, but can create complicated code because they are inefficient. That is why we must learn about advanced data structures. By building more complex data structures (eg. Huffman Tree, Multiway Tries), I learned how to design data structures based on what my program needs.</p>
-              </div>
-              
-              <br>
-
-              <button onclick="myFunction('CSE110', 'CSE11', 'CSE30', 'CSE100', 'CSE12', 'CSE140')" 
-                      class="w3-btn-block w3-left-align w3-light-green"
-                      data-aos="zoom-in"
-                      data-aos-delay="1200">
-                <center><b>CSE 110</b></center>
-              </button>
-              <div id="CSE110" class="w3-accordion-content w3-container">
-                <h5>Software Engineering</h5>
-                <p>CSE 110 taught me the agile process, one of the most common methods that companies use to make software. I was able to put this process to use in our quarter long class project (see projects section for more information). While creating our application, I was able to experience what it is like to work in a team similar to how real world industries would work.</p>
-              </div>
-
-              <br>
-
-              <button onclick="myFunction('CSE140', 'CSE11', 'CSE30', 'CSE100', 'CSE110', 'CSE12')" 
-                      class="w3-btn-block w3-left-align w3-light-blue"
-                      data-aos="zoom-in"
-                      data-aos-delay="1400">
-                <center><b>CSE 140 / CSE 141</b></center>
-              </button>
-              <div id="CSE140" class="w3-accordion-content w3-container">
-                <h5>Computer Architecture</h5>
-                <p>These two classes taught me how computers run our code: How code gets translated multiple times until it is binary, then the machine reads it using different circuits. Some might think that programmers don't need to know how the machine runs the code, they just have to make the code. But by learning how the machine works, I now understand that my programs can be optimized for speed by how you write them, what ISA you are using, and what Hardware(processor) model the machine is running.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      
-      </div>
-    </div>
-    <!-- End of Section 2 -->
-
-    <!-- Beginning of Section 3 -->
-    <div class="w3-row w3-light-grey" style="padding: 3% 0% 3% 0%;" id="Extra">
-      <br>
-      <div class="w3-container" data-aos="fade-up"
-        data-aos-duration="800">
-        <div class="w3-card-4">
-          <header class="w3-container w3-green">
-            <h1>Extracurriculars</h1>
-          </header>
-
-          <div class="w3-container w3-third w3-light-grey w3-col"
-               style="height: 500px;">
-            <img width="80%" src="images/CKI.gif"
-                             style="padding: 5% 0% 5% 0%;">
-          </div>
-
-          <div class="w3-container w3-rest w3-light-grey"
-               style="width: 66%; height: 500px">
-            <h2><b>Circle K International</b></h2>
-            <i>"Live to Serve, Love to Serve"</i>
-            <br>
-            <br>
-            <nav class = "w3-sidenav w3-dark-grey wr-card-2" style="width:15%; height:20%;">
-              <div class = "w3-container">
-                <a href="javascript:void(0)" class="tablink"
-                  onclick="openInfo(event, 'Overview')">Overview</a>
-                <a href="javascript:void(0)" class="tablink"
-                  onclick="openInfo(event, 'VPA')">VP Administration</a>
-                <a href="javascript:void(0)" class="tablink"
-                  onclick="openInfo(event, 'KFAM')">Kiwanis Family Chair</a>
-              </div>
-            </nav>
-
-            <div style="margin-left: 30%">
-              <div id="Overview" class="w3-container CKI w3-animate-left">
-                <h5>Overview</h5>
-                <p>The main focus of CKI is to promote community service, leadership development, and fellowship amongst peers at the collegiate and university levels. During my time at UCSD, I have been deeply involved in this organization, holding two positions on club board and one position on district committee. The overall motto of our organization is to help others and have fun while doing so. You can learn more at our club website: <a href="http://ucsdcki.org" target="_blank">ucsdcki.org</a></p>
-              </div>
-              <div id="VPA" class="w3-container CKI w3-animate-left">
-                <h5>Vice President of Administration</h5>
-                <p>From March 2016 to March 2017, I will hold the position of Vice President of Administration. My duties include filling out paperwork, updating our club constitution, managing a club board of 15 members, and overseeing a club of over 200 members.</p>
-                <p>When it comes to paperwork, I don't procrastinate. I fill out room reservation forms and event planning forms as soon as they are made available. This is a great trait I aquired from this position that I also practice in my schoolwork and the workplace.</p>
-                <p>My main duty as VPA is to oversee our club board. I run weekly meetings in order to track their progress. In these meetings, I guide each board member through reservations, paperwork, and event planning. I'm also in charge of teaching our board lessons and skills that are important for success.</p>
-              </div>
-              <div id="KFAM" class="w3-container CKI w3-animate-left">
-                <h5>Kiwanis Family Chair</h5>
-                <p>From March 2015 to March 2016, I held the position of Kiwanis Family Chair and I was appointed to be part of the District Kiwanis Family Committee. My main duties were to build and improve relationships between our club and other Kiwanis-related clubs around UCSD.</p>
-                <p>As Kiwanis Family Chair, I maintained strong relationships with the <a href = "http://www.kiwanisclublajolla.org" target="_blank">Kiwanis Club of La Jolla</a> and <a href="http//www.sdsucirclek.com/" target="_blank">SDSU Circle K</a>. However, I wanted to go above and beyond. So I built relationships between UCSD's Circle K International and Torrey Pines Kiwanis, Kiwanis Youth Development and Support Club San Diego, Key Clubs Division 21, 37E, 37N, 37S, 11 and 31. By building these relationships, our ability to provide service to our communities improves tenfold.<br>
-                Some of my proudest events as Kiwanis Family Chair are:
-                <br> --planning Kiwanis One Day - an event where different clubs under Kiwanis gather to do one big service project together; 
-                <br> --planning Key2Life - an event where we gather Kiwanians to teach University students about useful, real-world skills that are not normally taught in classes (eg. how to do taxes)</p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-  <!-- End Section 3 -->
-
-  <!-- Beginning of Section 4 -->
-  <div class="w3-row w3-dark-grey" style="padding: 3% 0% 3% 0%;" id="Work">
-    <br>
-    <div class="w3-container" data-aos="fade-up"
-                              data-aos-duration="800">
-      <div class="w3-card-4">
-        <header class="w3-container w3-grey">
-          <h1>Work Experience</h1>
-        </header>
-
-        <div class="w3-container w3-third w3-light-grey w3-col"
-             style="height: 500px;">
-          <img width="80%" src="images/Extra.jpg"
-                           style="padding: 5% 0% 5% 0%;">
-        </div>
-
-        <div class="w3-container w3-rest w3-light-grey"
-             style="width: 66%; height: 500px">
-          
-          <h3>Center for Student Involvement: Community Service Office Assistant</h3>
-          <p>As the Office Assistant for the Community Service section of UCSD's Center for Student Involvement, I help document each service related organization on campus (what their purpose is, what they do, and their membership). I also help plan and oversee campus wide service projects such as the MLK Day of Service.</p>
-          <h3>Free Lance Web/Graphic Design</h3>
-          <p>Created logo for <a href="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/19/19b16440e52074e6fe9ab1a2d6139f772a63e8c4_full.jpg" targer="_blank">Wicked Wonderland</a><br>
-          Created Website for Heritage High School Key Club (no longer active)</p>
-          <p><br> Be the next one to add onto this! Go to the <a href="#Contact">Contact Information Section!</a></p>
-        </div>
-
-      </div>
-    </div>
   </div>
-  <!-- End Section 4 -->
-
-  <!-- Beginning of Section 5 -->
-  <div class="w3-row w3-light-grey" style="padding: 3% 0% 3% 0%;" id="Projects">
-    <br>
-    <div class="w3-container" data-aos="fade-up"
-                              data-aos-duration="800">
-      <div class="w3-card-4">
-        <header class="w3-container w3-purple">
-          <h1>Projects</h1>
-        </header>
-
-        <div class="w3-container w3-third w3-light-grey w3-col"
-             style="height: 500px;">
-          <img width="80%" src="images/programming.png"
-                           style="padding: 5% 0% 5% 0%;">
-        </div>
-
-        <div class="w3-container w3-rest w3-light-grey"
-             style="width: 66%; height: 500px">
-          <h2>Class Projects</h2>
-          <p><b>Budgetting App</b><br>
-          For CSE110 (Software Engineering), I, along with a group of 4, built a functional, very basic budgetting app for Android Devices using FireBase and Android Studio. This app is not available on the webstore because of how primitive it is, however, the files for this application are available to view on <a href="https://github.com/ucsdCSE110wi16/CSE110W260T2" target="_blank">github.</a> This app was made using the agile process in order to meet the demands of our 'customer', so we were constantly updating our code in order to meet their expectations.
-          <br> Features for this app include: tracking spending, viewing spending history by categories, labeling spending activities, and setting reoccuring bill payments.
-          </p>
-
-          <p><b>Note-taking App</b><br>
-          For CSE170 (Human-Computer Interaction Design), my team and I decided to create a collaborative studying application that focused on created study guides, quiz questions, and friendly competition. This application is still in progress but a link to it will be available soon!
-          </p>
-
-          <h2>Side Projects</h2>
-          <p>coming soon...</p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <!-- End Section 5 -->
-
-  <!-- Beginning of Section 6 -->
-  <div class="w3-row w3-grey" style="padding: 3% 0% 3% 0%;" id="Contact">
-    <br>
-    <div class="w3-container" data-aos="fade-up"
-                              data-aos-duration="800">
-      <div class="w3-card-4">
-        <header class="w3-container w3-orange">
-          <h1>Contact Information</h1>
-        </header>
-
-        <div class="w3-container w3-third w3-light-grey w3-col"
-             style="height: 500px;">
-          <img width="80%" src="images/Contact.jpg"
-                           style="padding: 5% 0% 5% 0%;">
-        </div>
-
-        <div class="w3-container w3-rest w3-light-grey"
-             style="width: 66%; height: 500px">
-          <center>
-            <h3>If you want to contact me, here are my Social Media pages, Phone Number, Email, and Github page.</h3>
-            <br>
-            <a href="http://www.facebook.com/VincentOL" target="_blank"><img src="images/facebook.gif" class="w3-hover-opacity" style="width:10%;" data-aos="fade-up" data-aos-delay="600"></a>
-            <a href="http://www.linkedin.com/in/VincentOhWell" target="_blank"><img src="images/LinkedIn.png" class="w3-hover-opacity" style="width:10%;" data-aos="fade-up" data-aos-delay="800"></a>
-            <a href="https://github.com/vincentol" targer="_blank"><img src="images/GitHub.png" class="w3-hover-opacity" style="width:10%;" data-aos="fade-up" data-aos-delay="1000"></a>
-            <br>
-            <br>
-            <a href="mailto:vincentorionlim@gmail.com?Subject=Hello"><img src="images/gmail.png" class="w3-hover-opacity" style="width:10%;" data-aos="fade-up" data-aos-delay="1200"></a>
-            <br><p data-aos="fade-up" data-aos-delay="1200">vincentorionlim@gmail.com / volim@ucsd.edu</p>
-            <img src="images/phone.png" style="width:10%;" data-aos="fade-up" data-aos-delay="1400">
-            <br> <p data-aos="fade-up" data-aos-delay="1400">Cell: (951) 473-3172</p>
-          </center>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <!-- End Section 6 -->
-
-
-<!--/////////////////   Scripts   ///////////////////// -->
-
-    <script src="CSS/animations/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        easing: 'ease-in-out-sine'
-      });
-    </script>
-
-      <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>
-      <script>
-        requirejs.config({
-          baseUrl: '../dist',
-        });
-
-        require(['aos'], function(AOS){
-          AOS.init({
-            easing: 'ease-in-out-sine'
-          });
-        });
-    </script> -->
-
-    <script>
-      function myFunction(id1, id2, id3, id4, id5, id6) {
-        var x = document.getElementById(id1);
-        var y = document.getElementById(id2);
-        var a = document.getElementById(id3);
-        var b = document.getElementById(id4);
-        var c = document.getElementById(id5);
-        var d = document.getElementById(id6);
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-          y.className = y.className.replace(" w3-show", "");
-          d.className = d.className.replace(" w3-show", "");
-          c.className = c.className.replace(" w3-show", "");
-          b.className = b.className.replace(" w3-show", "");
-          a.className = a.className.replace(" w3-show", "");
-        } else {
-          x.className = x.className.replace(" w3-show", "");
-        }
-      }
-    </script>
-
-    <script>
-      function openInfo(evt, option) {
-        var i, x, tablinks;
-        x = document.getElementsByClassName("CKI");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < x.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" w3-blue-grey", "");
-        }
-        document.getElementById(option).style.display = "block";
-          evt.currentTarget.className += " w3-blue-grey";
-        }
-    </script>
-  </body>
+</div>
+<script src="js/jquery-2.0.2.min.js"></script>
+<script src="js/picasso.js"></script>
+<script src="js/clickhandle.js"></script>
+</body>
 </html>
