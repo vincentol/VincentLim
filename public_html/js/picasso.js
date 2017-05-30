@@ -39,9 +39,19 @@
             'duration' : '150%',
             'animations' :  [
             {
-              'selector'    : '.aboutme',
+              'selector'    : 'h2.aboutme',
+              'translateY'  : '-30%',
+              'opacity'     : [0, 1.75] // hack to accelrate opacity speed
+            } ,
+            {
+              'selector'    : '#amdesc1',
               'translateY'  : '-25%',
               'opacity'     : [0, 1.75] // hack to accelrate opacity speed
+            } ,
+            {
+              'selector'    : '#aboutme1',
+              'translateY'  : '-90%',
+              'opacity'     : [0, 1.75]
             } 
             ] 
           } , {
@@ -49,10 +59,45 @@
             'duration' : '100%',
             'animations' :  [
             {
-              'selector'    : '.aboutme',
-              'translateY'  : ['-25%', '-40%'],
+              'selector'    : '#amdesc1',
+              'translateY'  : ['-25%', '-50%'],
+              'opacity'     : -.75
+            } ,
+            {
+              'selector'    : '#amdesc2',
+              'translateY'  : '-25%',
+              'opacity'     : [0, 1.75] // hack to accelrate opacity speed
+            } ,
+            {
+              'selector'    : '#aboutme1',
+              'translateY'  : ['-90%', '-120%'],
+              'opacity'     : -.75
+            } , 
+            {
+              'selector'    : '#aboutme2',
+              'translateY'  : '-90%',
+              'opacity'     : [0, 1.75],
+            } 
+            ]
+          } , {
+            'wrapper' : '#amsection',
+            'duration' : '100%',
+            'animations' :  [
+            {
+              'selector'    : 'h2.aboutme',
+              'translateY'  : ['-30%', '-40%'],
               'opacity'     : [1, 0] // hack to accelrate opacity speed
-            }
+            } , 
+            {
+              'selector'    : '#amdesc2',
+              'translateY'  : ['-25%', '-50%'],
+              'opacity'     : -.75
+            } ,
+            {
+              'selector'    : '#aboutme2',
+              'translateY'  : ['-90%', '-120%'],
+              'opacity'     : -.75
+            }  
             ]
           } , {
             'wrapper' : '#class-section',
@@ -172,12 +217,7 @@
                 'translateX'  : '9%',
                 'opacity'     : [1, 0], // hack to accelrate opacity speed
                 'scale'       : 2,
-              }
-            ]
-          } , {
-            'wrapper' : '#class-section',
-            'duration' : '100%',
-            'animations' :  [
+              },
               {
                 'selector'    : '.explosion-byline',
                 'translateY'  : ['-25%', '-40%'],
@@ -190,68 +230,63 @@
               }
             ]
           } , {
-            'wrapper' : '#images',
+            'wrapper' : '#work-section',
             'duration' : '150%',
             'animations' :  [
               {
-                'selector'    : '.images-byline',
+                'selector'    : '.work-byline',
                 'translateY'  : '-25%',
                 'opacity'     : [0, 1.75] // hack to accelrate opacity speed
-              } , {
-                'selector'    : '#mediumHomepage',
-                'translateY'  : '-90%'
-              } , {
-                'selector'    : '.iphone',
-                'translateY'  : '-66%'
-              }
+              } , 
+              {
+                'selector'    : '#ibm-text',
+                'translateX'  : '20%',
+                'opacity'     : [0, 1.75] // hack to accelrate opacity speed
+              }, {
+                'selector'    : '#ibm',
+                'opacity'     : [0, 1],
+                'translateX'  : '-20%'
+              } 
             ]
           } , {
-            'wrapper' : '#images',
-            'duration' : '75%',
-            'animations' :  []
-          } , {
-            'wrapper' : '#images',
+            'wrapper' : '#work-section',
             'duration' : '150%',
             'animations' :  [
               {
-                'selector'    : '.images-byline',
-                'translateY'  : ['-25%', '-25%'],
-                'scale'       : .7,
-                'opacity'     : [1.75, -.75] // hack to accelrate opacity speed
-              } , {
-                'selector'    : '.images-byline-2',
+                'selector'    : '#ibm',
+                'opacity'     : [1, 0],
+                'translateX'  : ['-20%', '-30%'],
+                'rotate'      : ['0', '-90']
+              } ,
+              {
+                'selector'    : '#ibm-text',
+                'opacity'     : [1, 0],
+                'translateX'  : ['20%', '30%'],
+                'rotate'      : ['0', '90']
+              } , 
+              {
+                'selector'    : '#csi',
                 'opacity'     : [0, 1],
-                'translateY'  : '-15%'
-              } , {
-                'selector'    : '#mediumHomepage',
-                'translateY'  : ['-90%', '-90%'],
-                'scale'       : .8,
-                'opacity'     : -.75
-              } , {
-                'selector'    : '.iphone',
-                'translateY'  : ['-66%', '-90%'],
-                'translateX'  : '-2%',
-                'rotate'      : -90,
-                'scale'       : 1.3
-              } , {
-                'selector'    : '#medium-profile-iphone',
-                'scale'       : .9,
-                'translateX'  : '20%',
-              } , {
-                'selector'    : '#davegamache-dot-com',
-                'scale'       : [.5, 1]
+                'scale'       : [0, 1],
+                'translateX'  : ['-10%', '-20%']
+              } ,
+              {
+                'selector'    : '#csi-text',
+                'opacity'     : [0, 1],
+                'scale'       : [0, 1],
+                'translateX'  : ['10%', '20%']
               }
             ]
           } , {
-            'wrapper' : '#images',
+            'wrapper' : '#work-section',
             'duration' : '40%',
             'animations' :  []
           } , {
-            'wrapper' : '#images',
+            'wrapper' : '#work-section',
             'duration' : '150%',
             'animations' :  [
               {
-                'selector'    : '.images-byline-2',
+                'selector'    : '.work-byline-2',
                 'opacity'     : [1, .5],
                 'translateY'  : ['-15%', '50%'],
                 'opacity'     : [1, -2]

@@ -24,6 +24,9 @@ body {
   display: none;
 }
 
+a {
+  color: white;
+}
 
 /* 1. Intro Keyframe
 --------------------------------------- */
@@ -57,7 +60,7 @@ body {
 --------------------------------------- */
 #amsection,
 #class-section,
-#images {
+#work-section {
   position: fixed;
   top: 100%;
   width: 100%;
@@ -81,14 +84,33 @@ body {
   opacity: 0;
   font-size: 20px;
 }
-.images-byline {
+
+.work-byline {
   position: fixed;
-  top: 63%;
-  left: 10%;
+  top: 40%;
+  left: 34%;
   color: white;
-  max-width: 22%;
+  max-width: 50%;
   opacity: 0;
 }
+
+.work-text {
+  position: fixed;
+  top: 28%;
+  left: 30%;
+  color: white;
+  max-width: 40%;
+  opacity: 0;
+}
+
+.work-image {
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  max-width: 25%;
+  opacity: 0;
+}
+
 .section-headers {
   position: fixed;
   top: 53%;
@@ -122,6 +144,17 @@ p.aboutme {
   opacity: 0;
 }
 
+.amimage {
+  position: fixed;
+  top: 110%;
+  right: 5%;
+  width: 30%;
+}
+
+#aboutme2 {
+  border-radius: 50%;
+}
+
 /* 3. Explosion Keyframe
 --------------------------------------- */
 #domExplosionList {
@@ -148,12 +181,15 @@ li:hover {background-color: #fee}
 .dei-1  { top: 0;   left: 0;  }
 .dei-2  { top: 0;   left: 70px; }
 .dei-3  { top: 0;   left: 140px; }
-.dei-4  { top: 70px;   left: 0;  }
-.dei-5  { top: 70px;   left: 70px; }
-.dei-6  { top: 70px;   left: 140px; }
-.dei-7  { top: 140px;   left: 0;  }
-.dei-8 { top: 140px;   left: 70px; }
-.dei-9 { top: 140px;   left: 140px; }
+.dei-4  { top 0;    left: 210px; }
+.dei-5  { top: 70px;   left: 0;  }
+.dei-6  { top: 70px;   left: 70px; }
+.dei-7  { top: 70px;   left: 140px; }
+.dei-8  { top: 70px;   left: 210px; }
+.dei-9  { top: 140px;   left: 0;  }
+.dei-10 { top: 140px;   left: 70px; }
+.dei-11 { top: 140px;   left: 140px; }
+.dei-12 { top: 140px;   left: 210px; }
 
 
 /* 3. Images Keyframe
