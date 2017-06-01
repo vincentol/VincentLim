@@ -61,12 +61,20 @@ a {
 #amsection,
 #class-section,
 #work-section,
-#project-section,
-#end-section {
+#project-section {
   position: fixed;
   top: 100%;
   width: 100%;
   height: 100%;
+}
+#ending-section {
+  position: fixed;
+  top: 48%;
+  left: 10%;
+  width: 80%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
 }
 .explosion-byline {
   position: fixed;
@@ -243,16 +251,44 @@ li:hover {background-color: #fee}
   transform: translate3d(0, 0, 0);
 }
 
+.project_slideshow2 {
+  width: 1000px;
+  background: url(../images/Project_Slideshow.png);
+  background-size: 500px 1186px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+
 .project_slideshow .mover {
+  animation: moveSlideshow 12s linear infinite;
+  transition: opacity 0.5s ease-out;
+}
+
+.project_slideshow .mover-2 {
+  background: url(../images/Project_desc.png);
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  background-size: 500px 1186px;
   animation: moveSlideshow 12s linear infinite;
 }
 
 .project_slideshow:hover .mover {
-  /*opacity: 0;*/
+  opacity: 0;
   -webkit-animation-play-state: paused;
   -moz-animation-play-state: paused;
   -o-animation-play-state: paused;
    animation-play-state: paused;
+}
+
+.project_slideshow:hover .mover-2 {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+  opacity: 1;
 }
 
 @keyframes moveSlideshow {
@@ -341,3 +377,38 @@ li:hover {background-color: #fee}
   border-color: #fff;
 }
 
+#entro { 
+  font-size: 15px;
+  letter-spacing: 4px;
+  text-align: center;
+  font-weight: 300;
+}
+
+/* 4. Handling resize and small devices
+--------------------------------------- */
+.error {
+  display: none;
+  position: fixed;
+  width: 80%;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  top: 30%;
+  left: 10%;
+}
+.page-error .error {
+  display: block;
+}
+.page-error .container {
+  display: none;
+}
+@media all and (max-width: 1000px) {
+  .container {
+    display: none;
+    background: black;
+  }
+  .error {
+    display: block;
+    font-size: 22px;
+  }
+}

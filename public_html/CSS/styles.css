@@ -1,5 +1,5 @@
 body, html {
-background-color: transparent;
+background-color: black;
   height: 100%;
 }
 
@@ -74,3 +74,4 @@ background-color: transparent;
   opacity: 1;
   transform: rotateY(0)
 }
+
