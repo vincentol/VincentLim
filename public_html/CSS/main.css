@@ -60,7 +60,9 @@ a {
 --------------------------------------- */
 #amsection,
 #class-section,
-#work-section {
+#work-section,
+#project-section,
+#end-section {
   position: fixed;
   top: 100%;
   width: 100%;
@@ -118,6 +120,7 @@ a {
   color: white;
   opacity: 0;
 }
+
 .images-byline-2 {
   text-align: center;
   position: fixed;
@@ -191,6 +194,72 @@ li:hover {background-color: #fee}
 .dei-11 { top: 140px;   left: 140px; }
 .dei-12 { top: 140px;   left: 210px; }
 
+
+/* Project Section */
+.project_header {
+  position: fixed;
+  top: 40%;
+  left: 34%;
+  color: white;
+  max-width: 45%;
+  opacity: 0;
+}
+
+.project_title {
+  position: fixed;
+  top: 63%;
+  left: 10%;
+  color: white;
+  max-width: 45%;
+  opacity: 0;
+}
+
+.slideshow_container {
+  height: 350px;
+  width: 500px;
+  overflow: hidden;
+  position: fixed;
+  top: 20%;
+  right: 10%;
+  border: solid white;
+}
+
+.project_slideshow {
+  height: 1186px;
+  width: 500px;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0,0,0);
+}
+
+.project_slideshow > div {
+  width: 1000px;
+  background: url(../images/Project_Slideshow.png);
+  background-size: 500px 1186px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+
+.project_slideshow .mover {
+  animation: moveSlideshow 12s linear infinite;
+}
+
+.project_slideshow:hover .mover {
+  /*opacity: 0;*/
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+   animation-play-state: paused;
+}
+
+@keyframes moveSlideshow {
+  100% {
+    transform: translateY(-74.476%);
+  }
+}
 
 /* 3. Images Keyframe
 --------------------------------------- */

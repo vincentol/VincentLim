@@ -234,7 +234,7 @@
             'duration' : '150%',
             'animations' :  [
               {
-                'selector'    : '.work-byline',
+                'selector'    : '#workhead',
                 'translateY'  : '-25%',
                 'opacity'     : [0, 1.75] // hack to accelrate opacity speed
               } , 
@@ -286,35 +286,40 @@
             'duration' : '150%',
             'animations' :  [
               {
-                'selector'    : '.work-byline-2',
-                'opacity'     : [1, .5],
-                'translateY'  : ['-15%', '50%'],
-                'opacity'     : [1, -2]
-              } , {
-                'selector'    : '.iphone',
-                'translateY'  : ['-90%', '5%'],
-                'translateX'  : ['-2%', '-2%'],
-                'rotate'      : [-90, -90],
-                'scale'       : [1.3, 1.3]
-              } , {
-                'selector'    : '#medium-profile-iphone',
-                'translateX'  : ['20%', '20%']
-              } , {
-                'selector'    : '#davegamache-dot-com',
-                'scale'       : [1, 1]
+                'selector'  : '#workhead',
+                'opacity'   : [1, 0],
+                'translateY': ['-25%', '-50%']
+              },
+              {
+                'selector'  : '#csi',
+                'opacity'   : [1, 0],
+                'translateX': ['-20%', '-20%'],
+                'translateY': '-25%'
+              },
+              {
+                'selector'  : '#csi-text',
+                'opacity'   : [1, 0],
+                'translateX': ['20%', '20%'],
+                'translateY': '-25%'
               }
             ]
           } , {
-            'wrapper' : '#links',
+            'wrapper' : '#project-section',
             'duration' : '100%',
             'animations' :  [
               {
-                'selector'    : '#links',
-                'opacity'     : [0, 2],
-                'scale'       : [.8, 1]
-              } , {
-                'selector'    : '.twitter',
-                'opacity'     : [0, 1]
+                'selector'    : '#projecthead',
+                'translateY'  : '-30%',
+                'opacity'     : [0, 1.75] // hack to accelrate opacity speed
+              } , 
+              {
+                'selector'    : '#projectdesc',
+                'translateY'  : ['-40%', '-25%'],
+                'opacity'     : [0, 1.75] // hack to accelrate opacity speed
+              } , 
+              {
+                'selector'    : '.slideshow_container',
+                'opacity'     : [0, 1.75]
               }
             ]
           } , {
